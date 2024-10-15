@@ -1,0 +1,771 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #ffffff;
+  }
+  
+  /* Logo styling */
+  .logo-image {
+    height: 56px; /* Equivalent to Tailwind's h-14 */
+  }
+  
+  /* Navigation links styling */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Spacing between links */
+  }
+  
+  .nav-item {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: rgb(12, 11, 11);
+  }
+  
+  /* Button styling */
+  .nav-button {
+    border: 3px solid #BECE00; /* bg-lime-500 */
+    color: #BECE00;
+    padding: 0.75rem 2rem; /* px-8 py-3 */
+    border-radius: 9999px; /* Fully rounded */
+    font-size: 1rem; /* Normal size */
+    background-color: #ffffff;
+    cursor: pointer;
+    
+  }
+  
+ 
+  
+  /* Menu icon button */
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    height: 24px; /* Equivalent to Tailwind's h-6 */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide navigation links on small screens */
+    }
+    
+    .menu-button {
+      display: block;
+    }
+  }
+  
+
+  /* Container for image and overlay */
+.container {
+    width: 100%;
+   
+    
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+ .imgx {
+  object-fit: cover;
+  max-width: 100%;  
+  }
+  /* Styling for the image */
+  .full-width {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Rounded corners */
+  }
+  
+  /* Overlay styling */
+  .overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .overlay-content {
+    background-color: transparent; /* Accent background color */
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+  }
+  
+  .overlay-title {
+    font-size: 3rem; /* Equivalent to text-6xl */
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .overlay-title {
+      font-size: 2rem; /* Adjust text size for smaller screens */
+    }
+  }
+
+
+
+  /* Container for the content */
+.content-container {
+    width: 100%;
+   
+    margin: 0 auto;
+    background-color: #ffffff;
+  
+    
+  }
+  
+  /* Styling for each section */
+  .content-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 95px;
+    
+    }
+    .content-sectionx {
+        padding: 40px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    padding-left: 140px;
+    
+   
+        }
+        @media (max-width: 1280px){
+            .content-sectionx {
+                padding: 40px;
+                position: absolute;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            padding-left: 140px;
+            height: 400px;
+                }
+        }
+        .content-sectionxx{
+direction: flex;
+flex-direction: column;
+justify-content: space-around;
+padding-bottom: 40px;
+
+        }
+  
+  .icon-a, .icon-q {
+   padding-right: 40px;
+   position: absolute;
+    
+   
+  } 
+  
+  .icon-box {
+    line-height: 1.6;
+    margin-top: 10px;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .text-description {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+    
+  }
+
+
+
+  .containerx{
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+
+  /* Text section */
+  .text-center {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+  }
+
+  .heading {
+    font-size: 2rem; /* Equivalent to text-3xl */
+    font-weight: 300; /* font-light */
+    color: #333;
+  }
+
+  .highlight {
+    color: #BDCD31; /* lime-500 */
+    font-weight: bold;
+  }
+
+  /* Flex container for boxes */
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px; /* Equivalent to space-x-6 */
+    margin-top: 60px; /* mt-8 */
+  }
+
+  /* Individual boxes */
+  .box {
+    width: 20rem; /* w-48 */
+    height: 20rem; /* h-48 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* rounded */
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500; /* font-medium */
+    text-align: center;
+  }
+ 
+  .box-lime {
+    background-color: #BDCD31; /* bg-lime-500 */
+    color: black;
+    margin-top: 60px;
+  }
+
+
+
+
+  .boxx {
+    width: 20rem; /* w-48 */
+    height: 20rem;
+    position: relative; /* Ensure that the boxhover is positioned relative to the box */
+    padding: 20px;
+    border: 1px solid #BDCD31;
+    background-color: #BDCD31; /* Background color for .box-lime */
+    transition: opacity 0.3s; /* Smooth transition */
+  }
+  
+  .box-lime:hover {
+    opacity: 1; /* Fade out the box content on hover */
+  }
+  
+  .boxhover {
+    height: 20rem;
+    display: none;
+    
+    position: absolute; /* Position it absolutely within the parent */
+    top: 0; /* Align it to the top of the parent box */
+    left: 0; /* Align it to the left of the parent box */
+    right: 0; /* Stretch it to the right of the parent box */
+    background-color: white; /* White background for hover box */
+    padding: 20px; /* Padding inside the hover box */
+    border: 1px solid #BDCD31; /* Optional: border for the hover box */
+    z-index: 1; /* Ensure it is on top of the parent box */
+  }
+  .box-h{
+padding-bottom: 10px;
+  }
+
+
+
+  .box-lime:hover .boxhover {
+    display: block; /* Show the hover content on hover */
+  }
+
+
+
+
+  .boxxx {
+    width: 20rem; /* w-48 */
+    height: 20rem;
+    position: relative; /* Ensure that the boxhover is positioned relative to the box */
+    padding: 20px;
+    border: 1px solid #BDCD31;
+    background-color: #BDCD31; /* Background color for .box-lime */
+    transition: opacity 0.3s; /* Smooth transition */
+  }
+  
+  .box-gray:hover {
+    opacity: 1; /* Fade out the box content on hover */
+  }
+  
+  .boxhoverx {
+    height: 20rem;
+    display: none;
+    color: #000000;
+    position: absolute; /* Position it absolutely within the parent */
+    top: 0; /* Align it to the top of the parent box */
+    left: 0; /* Align it to the left of the parent box */
+    right: 0; /* Stretch it to the right of the parent box */
+    background-color: white; /* White background for hover box */
+    padding: 20px; /* Padding inside the hover box */
+    border: 1px solid #BDCD31; /* Optional: border for the hover box */
+    z-index: 1; /* Ensure it is on top of the parent box */
+  }
+  .box-h{
+padding-bottom: 10px;
+color:  #BECE00;
+align-items:start;
+  }
+
+
+
+  .box-gray:hover .boxhoverx {
+    display: block; /* Show the hover content on hover */
+  }
+  .box-gray {
+    background-color: #1f2937; /* bg-gray-800 */
+    color: white;
+    padding: 2px;
+  }
+
+
+
+
+
+
+
+
+  /* Main container */
+.containerxx {
+    min-height: 100vh; /* Full height of the viewport */
+   background-color: #ffffff;
+    padding: 4rem 1rem; /* Padding for top and bottom */
+}
+
+/* Main title */
+.main-title {
+    font-size: 2.5rem; /* Equivalent to text-4xl */
+    font-weight: 300; /* font-light */
+    text-align: center;
+}
+
+.highlight {
+    color: #BDCD31; /* lime-500 */
+}
+
+/* Description */
+.description {
+    text-align: center;
+    color: #4b5563; /* text-gray-600 */
+    margin-top: 1rem; /* mt-4 */
+}
+
+/* Process title */
+.process-title {
+    font-size: 2rem; /* Equivalent to text-3xl */
+    font-weight: bold; /* font-bold */
+    margin: 4rem 0 2rem; /* mt-16 mb-8 */
+    text-align: center;
+}
+
+/* Process steps */
+.process-steps {
+    display: flex;
+    flex-direction: row;
+    /* One column for small screens */
+   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .process-steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+       column-gap: 10px;
+       width: 100%;
+       max-width: 1100px;
+       margin: auto ;
+      
+    }
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+/* Step content */
+.step-content {
+    display: flex;
+    align-items: start; 
+    margin-bottom: 100px;
+    margin-top: 15px;
+    
+}
+
+/* Icon container */
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem; /* Space between icon and text */
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 240px;
+}
+/* Icon background */
+.icon-bg {
+    display: flex;
+    justify-content: space-around;
+   /* p-4 */
+    border-radius: 50%;
+    margin-right: 10px; /* Rounded */
+    padding-bottom: 70px;
+    width: auto;
+}
+.icon-bgs {
+    display: flex;
+    justify-content: space-around;
+    /* bg-gray-700 */
+    
+    border-radius: 50%;
+    margin-right: 10px; /* Rounded */
+    margin-bottom: 70px;
+}
+/* Icon styling */
+.icon {
+    height: auto; /* h-12 */
+    width: auto; /* w-12 */
+}
+
+/* Step number */
+.step-number {
+    background-color: #84cc16; /* bg-lime-500 */
+    color: white;
+    width: 3rem; /* w-12 */
+    height: 3rem; /* h-12 */
+    border-radius: 50%; /* Rounded */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold; /* font-bold */
+    margin-top: 1rem; /* Space above number */
+}
+
+/* Step description */
+.step-description {
+    margin-left: 2rem; /* Space between icon and description */
+}
+
+.step-heading {
+    font-size: 1.5rem; /* text-xl */
+    font-weight: bold;
+    padding-bottom: 10px; /* font-bold */
+}
+
+.step-text {
+    color: #4b5563; /* text-gray-600 */
+}
+
+/* Button container */
+.contact-button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; /* mt-16 */
+}
+
+/* Get in Touch Button */
+.contact-button {
+    border: 4px solid #BECE00; /* bg-lime-500 */
+    color: #BECE00;
+    padding: 0.75rem 2rem; /* px-8 py-3 */
+    border-radius: 9999px; /* Fully rounded */
+    font-size: 1rem; /* Normal size */
+    background-color: #ffffff;
+    cursor: pointer;
+   
+}
+
+.contact-button:hover {
+    background-color: #66bb00; /* Hover color for lime */
+}
+
+
+
+
+/* Container styling */
+.containerxxx {
+    display: flex;
+     /* Padding around the container */
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; 
+    justify-content: center;/* Center items */
+    padding: 1.5rem; /* Equivalent to p-6 */
+    background-color: #e5e7eb; /* bg-gray-100 */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    height: 420px;
+    text-align: center;
+    width:100%;
+   
+}
+
+.card-dark {
+    background-color: #1f2937; /* bg-gray-800 */
+    color: white; /* White text */
+}
+
+/* Card hover effect */
+.card:hover {
+    background-color: #d1d5db; /* Hover for light cards */
+}
+
+.card-dark:hover {
+    background-color: #374151; /* Hover for dark cards */
+}
+
+/* Icon styling */
+.icon {
+    height: 4rem; /* h-16 */
+    width: 4rem; /* w-16 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: black; /* Default text color for light cards */
+}
+
+.card-dark .card-title {
+    color: white; /* White text for dark cards */
+}
+
+
+
+
+
+/* Card Styling */
+.form-card {
+   
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+    padding: 2.5rem; /* p-10 */
+}
+
+/* Header Styling */
+.header {
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.title {
+    font-size: 3.5rem; /* text-4xl */
+    font-weight: bold; /* Font bold */
+    color: #2d3748; /* Gray text */
+}
+
+.highlight {
+    color: #BECE00; /* Lime-400 */
+}
+
+/* Form Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1.5rem; /* Gap between columns */
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+}
+
+label {
+    margin-bottom: 0.5rem; /* Space between label and input */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+    color: #4a5568; /* Gray text */
+}
+
+input,
+select,
+textarea {
+    padding: 0.75rem; /* p-3 */
+    border: 2px solid #BECE00; /* Border color */
+    border-radius: 0.375rem; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Focus State */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #a0aec0; /* Focus border color */
+}
+
+/* Submit Button Styling */
+.submit-button {
+    display: flex;
+    justify-content: start; /* Center button */
+    margin-top: 1.5rem; 
+    
+}
+
+button {
+    padding: 0.75rem 2rem; /* Button padding */
+    background-color: #4a5568; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 400; /* Font semi-bold */
+    border-radius: 0.375rem; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 9999px; 
+    align-items: start;
+    
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #2d3748; /* Darker shade on hover */
+}
+
+
+
+.footer {
+    background-color: #464646; /* Dark gray background */
+    color: white; /* White text */
+    padding: 2.5rem 0; /* Vertical padding */
+}
+
+/* Container Styling */
+.containerxxxxx {
+    display: flex;
+    justify-content: space-between; /* Space between sections */
+    align-items: flex-start; /* Align items at the top */
+   /* Max width */
+    margin: 0 auto; /* Center container */
+    padding: 1.65rem;
+}
+
+/* Left Section Styling */
+.left-section {
+    display: flex;
+    flex-direction: column; /* Stack logo and social media */
+    gap: 1rem; /* Space between items */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack logo and text */
+    align-items: center; /* Center horizontally */
+}
+
+.logo-img {
+    height: 4.5rem; /* Logo height */
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem; /* Space between social icons */
+}
+
+.social-icon img {
+    height: 1.5rem; /* Icon size */
+    transition: filter 0.3s; /* Smooth transition for hover */
+}
+
+/* Hover Effect for Social Media Icons */
+.social-icon:hover img {
+    filter: brightness(0.8); /* Darken icons on hover */
+}
+
+/* Middle Section Styling */
+.middle-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 3 equal columns */
+    gap: 2rem; /* Space between columns */
+}
+
+.links-column {
+    display: flex;
+    flex-direction: column; /* Stack title and list */
+}
+
+.links-title {
+    color: #ecc94b; /* Yellow color */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 0.5rem; /* Space below title */
+}
+
+.links-list {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+     /* Remove padding */
+}
+
+.link {
+    color: white; /* White link text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; 
+    padding: 2px;/* Smooth color transition */
+}
+
+/* Hover Effect for Links */
+.link:hover {
+    color: #a0aec0; /* Light gray on hover */
+}
+
+/* Bottom Section Styling */
+.bottom-section {
+    text-align: center; /* Center text */
+    color: #a0aec0; /* Light gray text */
+    margin-top: 1.5rem; /* Space above bottom text */
+}
+
+
+@media (max-width: 1023px){
+
+}
