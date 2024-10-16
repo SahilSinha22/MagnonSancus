@@ -15,13 +15,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 10px 30px;
     background-color: #ffffff;
   }
   
   /* Logo styling */
   .logo-image {
-    height: 56px; /* Equivalent to Tailwind's h-14 */
+    height: 50px; /* Equivalent to Tailwind's h-14 */
+    width: 100%;
   }
   
   /* Navigation links styling */
@@ -65,13 +66,19 @@ padding-left: 8px;
     
   }
   
- 
+ .nav-button:hover{
+
+  background-color: white;
+ }
   
   /* Menu icon button */
   .menu-button {
     background: none;
     border: none;
     cursor: pointer;
+  }
+  .menu-button:hover{
+    background-color: white;
   }
   
   .menu-icon {
@@ -81,11 +88,11 @@ padding-left: 8px;
   /* Media query for responsiveness */
   @media (max-width: 768px) {
     .nav-links {
-      display: none; /* Hide navigation links on small screens */
+      display: flex; /* Hide navigation links on small screens */
     }
     
     .menu-button {
-      display: block;
+      display: flex;
     }
   }
   
@@ -133,10 +140,12 @@ padding-left: 8px;
   }
   
   .overlay-title {
-    font-size: 3rem; /* Equivalent to text-6xl */
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #fff;
+    font-family: Archivo;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: left;
+    
   }
   
   /* Media queries for responsiveness */
@@ -214,11 +223,16 @@ padding-bottom: 40px;
   }
   
   .text-description {
-    font-size: 1.5rem;
-    color: #333;
-    line-height: 1.6;
-    margin-top: 10px;
     
+    color: #333;
+    
+    margin-top: 10px;
+    font-family: Poppins;
+font-size: 28px;
+font-weight: 400;
+line-height: 41px;
+
+
   }
 
 
@@ -239,14 +253,25 @@ padding-bottom: 40px;
   }
 
   .heading {
-    font-size: 2rem; /* Equivalent to text-3xl */
-    font-weight: 300; /* font-light */
-    color: #333;
+  
+    color:#000000;
+    font-family: Archivo;
+font-size: 68px;
+font-weight: 400;
+line-height: 68.2px;
+letter-spacing: -0.02em;
+text-align: center;
+
   }
 
   .highlight {
     color: #BDCD31; /* lime-500 */
-    font-weight: bold;
+    font-family: Archivo;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 68.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
   }
 
   /* Flex container for boxes */
@@ -275,6 +300,13 @@ padding-bottom: 40px;
     background-color: #BDCD31; /* bg-lime-500 */
     color: black;
     margin-top: 60px;
+    font-family: Poppins;
+font-size: 32px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: -0.02em;
+text-align: left;
+
   }
 
 
@@ -309,9 +341,24 @@ padding-bottom: 40px;
     border: 1px solid #BDCD31; /* Optional: border for the hover box */
     z-index: 1; /* Ensure it is on top of the parent box */
     border-radius: 8px; 
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: justified;
+    
+
   }
   .box-h{
 padding-bottom: 10px;
+font-family: Poppins;
+font-size: 32px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: -0.02em;
+text-align: left;
+
   }
 
 
@@ -352,6 +399,13 @@ padding-bottom: 10px;
     border: 1px solid #1f2937; /* Optional: border for the hover box */
     z-index: 1; /* Ensure it is on top of the parent box */
     border-radius: 8px; 
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: justified;
+
   }
   .box-h{
 padding-bottom: 10px;
@@ -368,6 +422,13 @@ align-items:start;
     background-color: #1f2937; /* bg-gray-800 */
     color: white;
     padding: 2px;
+    font-family: Poppins;
+font-size: 32px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: -0.02em;
+text-align: left;
+
   }
 
 
@@ -391,6 +452,13 @@ align-items:start;
     font-size: 2.5rem; /* Equivalent to text-4xl */
     font-weight: 300; /* font-light */
     text-align: center;
+    font-family: Archivo;
+font-size: 64px;
+font-weight: 400;
+line-height: 82px;
+letter-spacing: 1px;
+text-align: center;
+
 }
 
 .highlight {
@@ -402,6 +470,12 @@ align-items:start;
     text-align: center;
     color: #4b5563; /* text-gray-600 */
     margin-top: 1rem; /* mt-4 */
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: center;
+
 }
 
 /* Process title */
@@ -439,6 +513,10 @@ align-items:start;
     flex-direction: column;
     
 
+}
+.ontwthree img{
+  height: 500px;
+  margin-top: 40px;
 }
 
 /* Step content */
@@ -512,10 +590,22 @@ align-items:start;
     font-size: 1.5rem; /* text-xl */
     font-weight: bold;
     padding-bottom: 10px; /* font-bold */
+    font-family: Poppins;
+font-size: 28px;
+font-weight: 400;
+line-height: 38px;
+text-align: left;
+
 }
 
 .step-text {
     color: #4b5563; /* text-gray-600 */
+    font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+
 }
 
 /* Button container */
@@ -551,7 +641,14 @@ align-items:start;
     display: flex;
      /* Padding around the container */
 }
-
+.card-titles{
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 49px;
+  text-align: center;
+  
+}
 /* Card styling */
 .card {
     display: flex;
@@ -594,7 +691,13 @@ align-items:start;
 .card-title {
     font-size: 1.25rem; /* text-xl */
     font-weight: 600; /* font-semibold */
-    color: black; /* Default text color for light cards */
+    color: #000000; /* Default text color for light cards */
+    font-family: Poppins;
+font-size: 36px;
+font-weight: 400;
+line-height: 49px;
+text-align: center;
+
 }
 
 .card-dark .card-title {
@@ -607,9 +710,6 @@ align-items:start;
 cultural content
 journey! ---------*/
 
-.backdiv{
-
-}
 /* Card Styling */
 .form-card {
    
@@ -628,10 +728,24 @@ journey! ---------*/
     font-size: 3.5rem; /* text-4xl */
     font-weight: bold; /* Font bold */
     color: #2d3748; /* Gray text */
+    font-family: Archivo;
+font-size: 48px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: -0.01em;
+text-align: left;
+
 }
 
 .highlight {
     color: #BECE00; /* Lime-400 */
+    font-family: Archivo;
+font-size: 48px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: -0.01em;
+text-align: left;
+
 }
 
 
@@ -712,7 +826,8 @@ button:hover {
 .footer {
     background-color: #464646; /* Dark gray background */
     color: white; /* White text */
-    padding: 2.5rem 0; /* Vertical padding */
+    padding: 2.5rem 0;
+  
 }
 
 /* Container Styling */
@@ -723,6 +838,8 @@ button:hover {
    /* Max width */
     margin: 0 auto; /* Center container */
     padding: 1.65rem;
+    gap: 10px;
+
 }
 
 /* Left Section Styling */
@@ -770,7 +887,7 @@ button:hover {
 }
 
 .links-title {
-    color: #ecc94b; /* Yellow color */
+    color: #BECE00; /* Yellow color */
     font-weight: bold; /* Bold title */
     margin-bottom: 0.5rem; /* Space below title */
 }
@@ -790,12 +907,17 @@ button:hover {
     text-decoration: none; /* Remove underline */
     transition: color 0.3s; 
     padding: 2px;/* Smooth color transition */
+    font-family: Archivo;
+font-size: 16px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+
 }
 
 /* Hover Effect for Links */
-.link:hover {
-    color: #a0aec0; /* Light gray on hover */
-}
+
 
 /* Bottom Section Styling */
 .bottom-section {
@@ -805,14 +927,95 @@ button:hover {
 }
 
 
-@media (max-width: 1023px){
+@media (max-width: 768px){
+  .containerxxxxx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between sections */
+    align-items: flex-start; /* Align items at the top */
+   /* Max width */
+    margin: 0 auto; /* Center container */
+    padding: 1.65rem;
+    gap: 40px;
+}
+.middle-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 2rem; /* Space between columns */
+}
 
+.containerxxx {
+  display: flex;
+  width: auto;
+   /* Padding around the container */
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; 
+  justify-content: center;/* Center items */
+  padding: 1.5rem; /* Equivalent to p-6 */
+  background-color: #e5e7eb; /* bg-gray-100 */
+/* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  height: 420px;
+  text-align: center;
+  width:100%;
+ 
+}
+.form-card {
+   
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-around;
+    padding: 2.5rem; /* p-10 */
+    gap: 16px;
+}
+.iconx {
+  height: 6rem; /* h-16 */
+  width: 6rem; /* w-16 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+.iconox img{
+  height: 6rem; /* h-16 */
+  width: 6rem; /* w-16 */
+  margin-bottom: 1rem;
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1rem; /* text-xl */
+  font-weight: 200; /* font-semibold */
+  color: black; /* Default text color for light cards */
+}
+.cardo h2 {
+  font-size: 10px;
+  color: #333;
+  margin: 15px 0;
+}
+.cardoo h2 {
+  font-size: 16px;
+  color: white;
+  margin: 15px 0;
+}
+.ontwthree{
+margin-top: 10px;
+}
+.card-dark .card-title {
+  color: white; /* White text for dark cards */
+}
 }
 
 
 /* ----Navbar menu -------*/
 nav {
   position: relative;
+  z-index: 1;
+  background-color: white;
 }
 
 .menu {
@@ -827,46 +1030,326 @@ nav {
 
 .menu > li > a {
   text-decoration: none;
-  color: #666;
+  color: black;
   font-size: 16px;
   padding: 10px;
+  font-weight:500;
+  font-size: larger;
 }
 
 .menu li:hover > .list {
   color: #ffffff;
+  background-color: #1f2937;
+  width: 450px;
 }
 .menux{
   color: #BECE00;
 }
 
-.dropdown, .submenu {
+.dropdown {
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
+  top: 120%;
+  left: -40%;
+  background-color: #464646;
+  width: 450px;
+  list-style: none;
+  padding: 15px 0;
+ gap: 80px;
+  display: none;
+  min-width: 300px;
+  z-index: -3;
+  border-radius: 10px;
+}
+ .submenu {
+  position: absolute;
+  top: -110%;
+  left: 50%;
+  background-color: white;
+  color: #000000;
   list-style: none;
   padding: 10px 0;
   display: none;
-  min-width: 200px;
+  min-width: 210px;
   z-index: 1000;
+  height: 300px;
+  border-radius: 10px;
+  border:2px solid #BECE00;
 }
-
+.submenux {
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  background-color: white;
+  color: #000000;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  min-width: 210px;
+  z-index: 1000;
+  height: 300px;
+  border-radius: 10px;
+  border:2px solid #BECE00;
+}
+.list-gap{
+  padding: 10px 0;
+}
 .dropdown li, .submenu li {
   position: relative;
+  gap: 20px;
 }
 
-.dropdown li a, .submenu li a {
+.dropdown li a {
   text-decoration: none;
   color: #fff;
   padding: 10px 20px;
   display: block;
   white-space: nowrap;
 }
-
-.dropdown li:hover > a, .submenu li:hover > a {
-  background-color: #BECE00;
+.submenu li {
+  width: 100px;
+  padding: 10px 0px;
+  margin-left: 10px;
+}
+.submenux li {
+  width: 100px;
+  padding: 10px 0px;
+  margin-left: 10px;
 }
 
+.submenu li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 0px;
+  margin-left: 10px;
+  width:auto;
+  display: inline-block;
+  inline-size: none;
+  white-space: nowrap;
+  
+}
+.submenux li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 0px;
+  margin-left: 10px;
+  width:auto;
+  display: inline-block;
+  inline-size: none;
+  white-space: nowrap;
+  
+}
+
+.dropdown li:hover > a {
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 300px;
+  color: #000000;
+  
+}
+.submenu li:hover > a{
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 100px;
+  color: #000000;
+}
+.submenux li:hover > a{
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 100px;
+  color: #000000;
+}
 .menu li:hover > .dropdown, .dropdown li:hover > .submenu {
   display: block;
 }
+.menu li:hover > .dropdown,.buttons:hover > .dropdown, .dropdown li > .submenux {
+  display: block;
+}
+
+
+
+
+
+
+
+
+/*----------------card hiver ligustic----*/
+
+
+
+/* Card styling */
+.cardr {
+  position: relative;
+  background-color: #EEEEEE;
+ 
+  padding: 20px;
+ 
+  text-align: center;
+ 
+}
+
+
+
+/* cardo class initially hidden */
+.cardo {
+  display: none;
+  position: absolute;
+ width: 100%;
+ height: 100%;
+  background-color:#EEEEEE;
+  ;
+  
+ text-align: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+/* Show the cardo when hovering over the card */
+.card:hover .cardo {
+  display: block;
+}
+
+
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cardo h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 15px 0;
+}
+
+ul.containx {
+  list-style: none;
+  padding: 0;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 46px;
+text-align: left;
+
+}
+
+ul.containx li.containy {
+  font-size: 16px;
+  color: #696969;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 20px ;
+  align-items: start;
+  font-weight: 500;
+  
+  font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 46px;
+text-align: left;
+
+  
+}
+
+/* Arrow styling for each list item */
+ul.containx li.containy::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #696969;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/*---gray---*/
+.cardrr {
+  position: relative;
+  background-color: #464646;
+ 
+  padding: 20px;
+ 
+  text-align: center;
+ 
+}
+/* Show the cardo when hovering over the card */
+.card:hover .cardoo {
+  display: block;
+}
+.cardoo {
+  display: none;
+  position: absolute;
+ width: 100%;
+ height: 100%;
+  background-color:#464646;
+  
+  
+ text-align: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+ul.containxx {
+  list-style: none;
+  padding: 0;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 46px;
+text-align: left;
+
+}
+
+ul.containxx li.containyy {
+  font-size: 16px;
+  color: white;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 20px ;
+  align-items: start;
+  font-weight: 500;
+  font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 46px;
+text-align: left;
+
+}
+
+/* Arrow styling for each list item */
+ul.containxx li.containyy::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #BECE00;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+
