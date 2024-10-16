@@ -28,7 +28,7 @@
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 16px; /* Spacing between links */
+    gap: 20px; /* Spacing between links */
   }
   
   .nav-item {
@@ -38,7 +38,17 @@
     font-weight:500;
     font-size: larger;
   }
-  
+  .buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .dropdown-icons{
+
+
+padding-left: 8px;
+  }
   .nav-item:hover {
     color: #BECE00;
   }

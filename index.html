@@ -1,420 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Layout</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Top Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
     <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">
-        <img src="Layer_1.png" alt="Magnon Sancus logo" class="logo-image">
-      </a>
-      </div>
-      <div class="nav-links">
-        <a href="Solution.html" class="nav-item">Solutions</a>
-        <a href="#" class="nav-item">Work</a>
-        <a href="#" class="nav-item">Culture</a>
-        <button class="nav-button">Get in Touch</button>
-        <button class="menu-button">
-          <img src="https://openui.fly.dev/openui/menu.svg?text=☰" alt="menu icon" class="menu-icon">
-        </button>
-      </div>
+        <div class="logo">
+            <img src="assets/navbar_logo.svg" alt="Logo">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Solutions 
+				<img src="assets/drpdwnicon.svg" alt="Dropdown Icon" class="dropdown-icon">
+			</button>
+            <div class="dropdown-content">
+                <a href="Solution.html">Translation</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Work
+				<img src="assets/drpdwnicon.svg" alt="Dropdown Icon" class="dropdown-icon">
+			</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Culture 
+				<img src="assets/drpdwnicon.svg" alt="Dropdown Icon" class="dropdown-icon">
+			</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <button class="submit-btn">Get in Touch</button>
+        <div class="menu-icon">
+			<img src="assets/menu-button.svg" alt="menu-button">
+		</div>
     </nav>
-<main>
-    <!-- Main Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>
-          <span class="highlight">Globally</span>
-          <span class="hightightBlack">Cultured.</span>
-          <span class="highlight">Natively</span>
-          <span class="hightightBlack">Yours.</span>
-        </h1>
-        <div>
-          <p class="subtext">
-            Transcend into the world of multilingual content with a
-            solution-driven approach —
-          </p>
-          <p class="subtext-light">
-            The coming together of human quotient and artificial intelligence.
-          </p>
-        </div>
-        <img
-          src="images/homeImg.png"
-          alt="City illustration"
-          class="hero-image"
-        />
-      </div>
-    </section>
-
-    <!-- Showreel Section -->
-    <section class="showreel">
-      <img src="images/showreel.png" alt="Show Video" class="video-image" />
-    </section>
-
-    <!-- Core Pillars Section -->
-    <section class="core-pillars">
-      <div class="pillars-header">
-        <h2>Our core pillars:</h2>
-      </div>
-      <div class="pillars-bar">
-        <div class="pillar">Precision</div>
-        <div class="pillar">Quality</div>
-        <div class="pillar">Culture</div>
-        <div class="pillar">Speed</div>
-        <div class="pillar">Scale</div>
-      </div>
-    </section>
-
-    <section class="hero-1">
-      <div class="hero-content">
-        <h1>
-          <span class="highlight-1">Global</span>
-          <span class="hightightBlack-1">Impression.</span>
-          <span class="highlight-1">Local</span>
-          <span class="hightightBlack-1">Connection.</span>
-        </h1>
-        <div class="text-wrapper">
-          <p class="description">
-            All-inclusive localisation solutions to make brands world-ready. We
-            translate, localise, scale, and adapt your message to the local
-            markets &mdash; so it drives last mile resonance with the consumer.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="global-impression-container">
-      <div class="section">
-        <div class="content-container staff-augmentation">
-          <div class="text-content">
-            <h2>Staff Augmentation</h2>
-            <p>
-              Boost your productivity instantly with our flexible and scalable
-              staff augmentation solutions.
-            </p>
-            <a href="#" class="discover-link">Discover more &rarr;</a>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="image-content">
-            <img
-              src="images/staffArgumentation.png"
-              alt="Staff Argumentation"
-              class="staff-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="section"
-        style="
-          margin-left: 8rem;
-          margin-right: 8rem;
-          margin-top: 50px;
-          margin-bottom: 50px;
-          background-color: rgba(246, 246, 246, 1);
-        "
-      >
-        <div
-          class="content-container staff-augmentation"
-          style="padding: 63px 20px"
-        >
-          <div class="image-content">
-            <img
-              src="images/contentLocalisation.png"
-              alt="Content Localisation"
-              class="staff-image"
-            />
-          </div>
-          <div class="vertical-line-green"></div>
-          <div class="text-content">
-            <h2>Content Localisation</h2>
-
-            <p>
-              Make your content resonate globally with seamless content
-              localisation.
-            </p>
-            <a href="#" class="discover-link">Discover more &rarr;</a>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="content-container staff-augmentation">
-          <div class="text-content">
-            <h2>Cultural Strategy</h2>
-            <p>
-              Build strong connections and understand your market with
-              insights-driven cultural strategy solutions.
-            </p>
-            <a href="#" class="discover-link">Discover more &rarr;</a>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="image-content">
-            <img
-              src="images/culturalStratgey.png"
-              alt="Staff Argumentation"
-              class="staff-image"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="section"
-        style="
-          margin-left: 8rem;
-          margin-right: 8rem;
-          margin-top: 50px;
-          margin-bottom: 50px;
-          background-color: rgba(246, 246, 246, 1);
-        "
-      >
-        <div
-          class="content-container staff-augmentation"
-          style="padding: 63px 20px"
-        >
-          <div class="image-content">
-            <img
-              src="images/AISolutions.png"
-              alt="Content Localisation"
-              class="staff-image"
-            />
-          </div>
-          <div class="vertical-line-green"></div>
-          <div class="text-content">
-            <h2>AI Solutions</h2>
-
-            <p>
-              Revolutionise your localisation operations with smart, innovative,
-              and creative AI solutions.
-            </p>
-            <a href="#" class="discover-link">Discover more &rarr;</a>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div
-          class="content-container staff-augmentation"
-          style="margin-bottom: 5rem"
-        >
-          <div class="text-content">
-            <h2>Digital Marketing</h2>
-            <p>
-              Drive traffic, boost sales, and outpace the competition with our
-              impactful regional digital marketing strategies.
-            </p>
-            <a href="#" class="discover-link">Discover more &rarr;</a>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="image-content">
-            <img
-              src="images/DigitalMarketing.png"
-              alt="Staff Argumentation"
-              class="staff-image"
-            />
-          </div>
-        </div>
-      </div>
+	
+	<section class="hero-section">
+    <div class="hero-content">
+			<span class="highlightGreen">Globally</span>
+			<span class="hightightBlack">Cultured.</span>
+			<span class="highlightGreen">Natively</span>
+			<span class="hightightBlack">Yours.</span>
+        <p>Transcend into the world of multilingual content with a solution-driven approach — <span id ="hero_subtext2">The coming together of human quotient and artificial intelligence.</span></p>
     </div>
-
-    <div class="carousel-container" >
-      <div class="text-section">
-        Words turned into <span class="highlight">Results.</span>
-      </div>
-      <div style="width:80% !important; overflow: hidden;">
-  
-        <div class="carousel-content" id="carouselContent" >
-          <div class="quote-box">
-            <h3>Jonathan Sweeney</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>Barbara Cook</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>Barbara Cook</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
-          <div class="quote-box">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
-          </div>
+	<div class="image-section-top">
+    <!-- The content inside the section can be empty or you can add overlay text here if needed -->
+	</div>
+	</section>
+	
+	<section class="play-section">
+    <div class="play-content">
+        <div class="play-button">
+            <img src="assets/play-icon.svg" alt="Play Button">
         </div>
-      </div>
+        <p class="highlight">Cultural Content Agency:</p>
+        <p class="subtext_play-section">Amplify your Brand with a Multilingual Communication Strategy.</p>
     </div>
-    <div class="dots">
-      <span class="dot active" data-slide="0"></span>
-      <span class="dot" data-slide="1"></span>
-      <span class="dot" data-slide="2"></span>
+</section>
+
+<section class="pillar-section">
+    <h2>Our Core pillars:</h2>
+    <div class="box-container">
+        <div class="box yellow">Precision</div>
+        <div class="box light-yellow">Quality</div>
+        <div class="box yellow">Culture</div>
+        <div class="box light-yellow">Speed</div>
+        <div class="box yellow"> Scale</div>
     </div>
-   
-    <div style="background-color:white; height:40vh; margin-top: 2rem;">
-      <div style="display:flex; justify-content: center; ">
-        <h1>
-          <span class="highlight" style="font-weight:normal">Trusted</span>
-          <span class="hightightBlack" style="font-weight:normal">Partnerships.</span>
-          <span class="highlight" style="font-weight:normal">Inspired</span>
-          <span class="hightightBlack" style="font-weight:normal">Growth.</span>
-        </h1>
- 
+</section>
 
-      </div>
-        
-        
-          </div>
-        </main>
-        
-                <script>
-                  const carouselContent = document.getElementById('carouselContent');
-                  const dots = document.querySelectorAll('.dot');
-                  let currentIndex = 0;
-                  const totalSlides = dots.length;
-              
-                  // Function to update the slide
-                  function goToSlide(index) {
-                    carouselContent.style.transform = `translateX(-${index * (300 + 32)}px)`; // Adjust with box width and gap
-                    dots.forEach(dot => dot.classList.remove('active'));
-                    dots[index].classList.add('active');
-                  }
-              
-                  // Function to auto slide
-                  function autoSlide() {
-                    currentIndex = (currentIndex + 1) % totalSlides;
-                    goToSlide(currentIndex);
-                  }
-              
-                  // Auto-slide every 3 seconds
-                  let slideInterval = setInterval(autoSlide, 3000);
-              
-                  // Add event listeners to dots for manual navigation
-                  dots.forEach((dot, index) => {
-                    dot.addEventListener('click', () => {
-                      clearInterval(slideInterval); // Stop auto-slide when manually navigated
-                      currentIndex = index;
-                      goToSlide(index);
-                      slideInterval = setInterval(autoSlide, 3000); // Restart auto-slide
-                    });
-                  });
-                </script>
+<section class="impression-section">
+    <h1>
+		<span class="highlightGreen">Global</span>
+		<span class="hightightBlack">Impression.</span>
+		<span class="highlightGreen">Local</span>
+		<span class="hightightBlack">Connection.</span>
+	</h1>
+    <p class="subtext_impression-section">
+        All-inclusive localisation solutions to make brands world-ready. We translate, localise, scale, and adapt your<br>
+        message to the local markets — so it drives last mile resonance with the consumer.
+    </p>
+</section>
 
-<footer class="footer">
-  <div class="containerxxxxx">
-      <!-- Left Section (Logo + Social Media) -->
-      <div class="left-section">
-          <div class="logo">
-            <a href="index.html">
-              <img src="footerlogo.png" alt="Magnon Sancus Logo" class="logo-img" />
-            </a>
-          </div>
-          <div class="social-media">
-              <a href="https://twitter.com" aria-label="Twitter" class="social-icon">
-                  <img src="twit.png" alt="Twitter" />
-              </a>
-              <a href="https://facebook.com" aria-label="Facebook" class="social-icon">
-                  <img src="fac.png" alt="Facebook" />
-              </a>
-              <a href="https://instagram.com" aria-label="Instagram" class="social-icon">
-                  <img src="ins.png" alt="Instagram" />
-              </a>
-              <a href="https://linkedin.com" aria-label="LinkedIn" class="social-icon">
-                  <img src="link.png" alt="LinkedIn" />
-              </a>
-          </div>
-      </div>
 
-      <!-- Middle Section (Links) -->
-      <div class="middle-section">
-          <div class="links-column">
-              <h3 class="links-title">Solutions</h3>
-              <ul class="links-list">
-                  <li><a href="#" class="link">Staff Augmentation</a></li>
-                  <li><a href="#" class="link">Content Localisation</a></li>
-                  <li><a href="#" class="link">Cultural Strategy</a></li>
-                  <li><a href="#" class="link">AI Solutions</a></li>
-                  <li><a href="#" class="link">Digital Marketing</a></li>
-              </ul>
-          </div>
 
-          <div class="links-column">
-              <h3 class="links-title">About Us</h3>
-              <ul class="links-list">
-                  <li><a href="#" class="link">Our Lineage</a></li>
-                  <li><a href="#" class="link">Our Team</a></li>
-              </ul>
-          </div>
+<section class="dual-section">
+    <div class="content-container">
+        <div class="text-container">
+            <span class="text-container_heading">Staff Augmentation</span>
+            <p>Boost your productivity instantly with our flexible <br> and scalable staff augmentation solutions.</p>
+            <a href="#" class="text-link">Discover more<span class="arrow">→</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="image-container">
+            <img src="assets/gilc_img1.svg" alt="Description of Image">
+        </div>
+    </div>
+    
+    <div class="content-container1" style="background-color: #F9F9F9">
+        <div class="image-container">
+            <img src="assets/gilc_img2.svg" alt="Description of Image">
+        </div>
+        <div class="divider1"></div>
+        <div class="text-container1">
+            <span class="text-container_heading">Content Localisation</span>
+            <p>Make your content resonate globally with <br> seamless content localisation.</p>
+            <a href="#" class="text-link">Discover more<span class="arrow">→</span></a>
+        </div>
+    </div>
+	
+	<div class="content-container">
+        <div class="text-container">
+            <span class="text-container_heading">Cultural Strategy</span>
+            <p>Build strong connections and understand your market <br> with insights-driven cultural strategy solutions.</p>
+            <a href="#" class="text-link">Discover more<span class="arrow">→</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="image-container">
+            <img src="assets/gilc_img3.svg" alt="Description of Image">
+        </div>
+    </div>
+	
+	<div class="content-container1" style="background-color: #F9F9F9">
+        <div class="image-container">
+            <img src="assets/gilc_img4.svg" alt="Description of Image">
+        </div>
+        <div class="divider1"></div>
+        <div class="text-container1">
+            <span class="text-container_heading">AI Solutions</span>
+            <p>Revolutionise your localisation operations with <br> smart, innovative, and creative AI solutions.</p>
+            <a href="#" class="text-link">Discover more<span class="arrow">→</span></a>
+        </div>
+    </div>
+	
+	<div class="content-container" style="height:26em;">
+        <div class="text-container">
+            <span class="text-container_heading">Digital Marketing</span>
+            <p>Drive traffic, boost sales, and outpace the <br> competition with our impactful regional digital </br> marketing strategies.</p>
+            <a href="#" class="text-link">Discover more<span class="arrow">→</span></a>
+        </div>
+        <div class="divider"></div>
+        <div class="image-container">
+            <img src="assets/gilc_img5.svg" alt="Description of Image">
+        </div>
+    </div>
+</section>
 
-          <div class="links-column">
-              <h3 class="links-title">Our Work</h3>
-              <ul class="links-list">
-                  <li><a href="#" class="link">Case Studies</a></li>
-                  <li><a href="#" class="link">Portfolio</a></li>
-                  <li><a href="#" class="link">Testimonials</a></li>
-              </ul>
-          </div>
 
-          <div class="links-column">
-              <h3 class="links-title">Insights</h3>
-              <ul class="links-list">
-                  <li><a href="#" class="link">Blog</a></li>
-                  <li><a href="#" class="link">Resources</a></li>
-              </ul>
-          </div>
+<section class="unique-carousel-section">
+    <div class="unique-text-container">
+        <span class="utxt_carousel">Words</span>
+        <span class="utxt_carousel">turned</span>
+        <span class="utxt_carousel">into</span>
+        <span class="utxt_carousel" id="utxt_carousel_1">Results.</span>
+    </div>
+    <div class="unique-carousel-container">
+        <div id="carousCard_1_image">
+            <img src="assets/quote.svg" alt="Description of Image">
+        </div>
+        <div class="unique-carousel">
+            <div id="carousCard_1" class="unique-card unique-card-1">
+                <div class="card-name">Jonathan Sweeney</div>
+                <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
+            </div>
+            <div class="unique-card unique-card-2">
+                <div class="card-name">Barbara Cook</div>
+                <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc, a scelerisque ipsum sapien in felis. Nulla facilisi. Curabitur nec.</p>
+            </div>
+            <div class="unique-card unique-card-3">
+                <div class="card-name">Mary Rogers</div>
+                <p class="card-content">“I just want to thank you for the great job you did during my transition to oxygen. You unraveled all the confusion and the new company is wonderful.”</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="unique-indicator-wrapper">
+    <div class="unique-indicator-container">
+        <span class="unique-indicator active"></span>
+        <span class="unique-indicator"></span>
+        <span class="unique-indicator"></span>
+    </div>
+</div>
 
-          <div class="links-column">
-              <h3 class="links-title">Work with us</h3>
-              <ul class="links-list">
-                  <li><a href="#" class="link">Culture @ Magnon</a></li>
-                  <li><a href="#" class="link">Careers</a></li>
-              </ul>
-          </div>
+<section class="heroBottom-section">
+    <div class="heroBottom-content">
+			<span class="highlightGreen">Trusted</span>
+			<span class="hightightBlack">Partnerships.</span>
+			<span class="highlightGreen">Inspired</span>
+			<span class="hightightBlack">Inspired.</span>
+    </div>
+</section>
 
-          <div class="links-column">
-              <h3 class="links-title">Get in Touch</h3>
-              <ul class="links-list">
-                  <li><a href="#" class="link">Contact Us</a></li>
-                  <li><a href="#" class="link">FAQs</a></li>
-              </ul>
-          </div>
-      </div>
-  </div>
 
-  <!-- Bottom Section -->
-  <div class="bottom-section">
-      <p>© 2024 magnon sancus all rights reserved</p>
-  </div>
-</footer>
-  </body>
+<section class="infinite-carousel">
+    <div class="carousel-wrapper">
+        <div class="carousel-images">
+            <img src="assets/image1.png" alt="Image 1">
+            <img src="assets/image2.png" alt="Image 2">
+            <img src="assets/image3.png" alt="Image 3">
+            <img src="assets/image4.png" alt="Image 4">
+            <img src="assets/image5.png" alt="Image 5">
+            <img src="assets/image6.png" alt="Image 6">
+            <img src="assets/image7.png" alt="Image 7">
+            <img src="assets/image8.png" alt="Image 8">
+            <img src="assets/image9.png" alt="Image 9">
+            <img src="assets/image10.png" alt="Image 10">
+            <img src="assets/image11.png" alt="Image 11">
+            <img src="assets/image12.png" alt="Image 12">
+        </div>
+    </div>
+</section>
+
+
+<section class="form_section">
+<div class="form-container-unique">
+    <div class="text-form-wrapper-unique">
+        <div class="text-section-unique">
+            <span id="unique-heading">Start your <span id="highlight-text">cultural content journey!</span></span>
+        </div>
+        <div class="form-section-unique">
+            <form id="unique-form" action="#">
+                <div class="form-row-unique">
+                    <input id="unique-name" type="text" placeholder="Name*" required>
+                    <input id="unique-phone" type="text" placeholder="Phone*" required>
+                </div>
+                <div class="form-row-unique">
+                    <input id="unique-email" type="email" placeholder="E-mail address*" required>
+                    <select id="unique-subject" required>
+                        <option value="" disabled selected>Subject*</option>
+                        <option value="subject1">Subject 1</option>
+                        <option value="subject2">Subject 2</option>
+                    </select>
+                </div>
+                <textarea id="unique-message" placeholder="Message (Optional)"></textarea>
+                <button id="unique-submit-btn" type="submit">Let's Connect</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+<div class="footer-container-unique">
+    <div class="footer-logo-section-unique">
+        <img src="assets/companylogoFooter.svg" alt="Company Logo" class="footer-logo-unique">
+        <div class="footer-social-icons-unique">
+            <a href="#"><img src="assets/social1.svg" alt="Twitter"></a>
+            <a href="#"><img src="assets/social2.svg" alt="Facebook"></a>
+            <a href="#"><img src="assets/social3.svg" alt="Instagram"></a>
+            <a href="#"><img src="assets/social4.svg" alt="LinkedIn"></a>
+        </div>
+    </div>
+    <div class="footer-links-section-unique">
+        <div class="footer-column-unique">
+            <h3>Solutions</h3>
+            <ul>
+                <li><a href="#">Staff Augmentation</a></li>
+                <li><a href="#">Content Localisation</a></li>
+                <li><a href="#">Cultural Strategy</a></li>
+                <li><a href="#">AI Solutions</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+            </ul>
+        </div>
+        <div class="footer-column-unique">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Our Lineage</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="footer-column-unique">
+            <h3>Our Work</h3>
+            <ul>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="footer-column-unique">
+            <h3>Insights</h3>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </div>
+        <div class="footer-column-unique">
+            <h3>Work with Us</h3>
+            <ul>
+                <li><a href="#">Culture @ Magnon</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-column-unique">
+            <h3>Get in Touch</h3>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="footer-bottom-unique">
+        <p>© 2024 magnon sancus all rights reserved</p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+const carouselImages = document.querySelector('.carousel-images');
+const images = document.querySelectorAll('.carousel-images img');
+
+let imageWidth = images[0].clientWidth + 40; // Add 40px margin
+let totalWidth = imageWidth * images.length;
+
+let cloneImages = () => {
+    // Clone all images to enable the infinite effect
+    images.forEach((image) => {
+        let clone = image.cloneNode(true);
+        carouselImages.appendChild(clone);
+    });
+};
+
+// Call the function to clone the images
+cloneImages();
+
+// Animation loop to scroll the images
+let position = 0;
+let scrollSpeed = 1.5; // Adjust the scroll speed here
+
+let moveImages = () => {
+    position -= scrollSpeed;
+    if (position <= -totalWidth) {
+        position = 0;
+    }
+    carouselImages.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(moveImages);
+};
+
+// Start the animation
+moveImages();
+
+</script>
+</body>
 </html>
