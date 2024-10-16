@@ -66,7 +66,14 @@
     </div>
 	<div class="image-section-top">
     <!-- The content inside the section can be empty or you can add overlay text here if needed -->
+    
 	</div>
+    <div>
+        <img
+        src="assets/image-section-top.svg"
+        class="homeImg"
+      />
+    </div>
 	</section>
 	
 	<section class="play-section">
@@ -176,22 +183,24 @@
         <span class="utxt_carousel" id="utxt_carousel_1">Results.</span>
     </div>
     <div class="unique-carousel-container">
-        <div id="carousCard_1_image">
+        <div id="carousCard_1_image" class="quote-image">
             <img src="assets/quote.svg" alt="Description of Image">
         </div>
         <div class="unique-carousel">
-            <div id="carousCard_1" class="unique-card unique-card-1">
+            <div class="carousel-main">
+            <div id="carousCard_1" class="unique-card">
                 <div class="card-name">Jonathan Sweeney</div>
                 <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc.</p>
             </div>
-            <div class="unique-card unique-card-2">
+            <div class="unique-card">
                 <div class="card-name">Barbara Cook</div>
                 <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, magna non malesuada aliquet, orci tortor fermentum nunc, a scelerisque ipsum sapien in felis. Nulla facilisi. Curabitur nec.</p>
             </div>
-            <div class="unique-card unique-card-3">
+            <div class="unique-card">
                 <div class="card-name">Mary Rogers</div>
-                <p class="card-content">“I just want to thank you for the great job you did during my transition to oxygen. You unraveled all the confusion and the new company is wonderful.”</p>
+                <p class="card-content">"I just want to thank you for the great job you did during my transition to oxygen. You unraveled all the confusion and the new company is wonderful."</p>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -368,6 +377,71 @@ let moveImages = () => {
 // Start the animation
 moveImages();
 
+
+
+
+
+
+
+const uniqueCards = document.querySelectorAll('.unique-card');
+const totalCards = uniqueCards.length;
+let currentIndex = 0;
+const intervalTime = 4000; 
+
+// Indicator elements
+const indicators = document.querySelectorAll('.unique-indicator');
+
+// Function to rotate the cards and set the middle card as active
+const rotateCards = (newIndex = currentIndex) => {
+    uniqueCards.forEach((card, index) => {
+        // Reset the order of all cards based on currentIndex
+        const newOrder = (index - newIndex + totalCards) % totalCards;
+        card.style.order = newOrder;
+        card.classList.remove('card-active'); // Remove active class from all cards
+    });
+
+    // Find the middle index based on the total number of cards (dynamically)
+    const middleIndex = Math.floor(totalCards / 2);
+
+    // Apply the card-active class to the middle card in the current visual order
+    const middleCard = [...uniqueCards].find(card => Number(card.style.order) === middleIndex);
+    if (middleCard) {
+        middleCard.classList.add('card-active'); 
+    }
+
+    // Update indicators to reflect the active card
+    updateIndicators(newIndex);
+
+    // Update currentIndex for the next rotation
+    currentIndex = newIndex;
+};
+
+// Function to update the active indicator
+const updateIndicators = (activeIndex) => {
+    indicators.forEach((indicator, index) => {
+        if (index === activeIndex) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+};
+
+// Click event handler for indicators
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        // Set currentIndex to the clicked indicator index and rotate the carousel
+        rotateCards(index);
+    });
+});
+
+// Initial rotation
+rotateCards();
+
+// Set interval for continuous rotation
+setInterval(() => {
+    rotateCards((currentIndex + 1) % totalCards);
+}, intervalTime);
 </script>
 </body>
 </html>

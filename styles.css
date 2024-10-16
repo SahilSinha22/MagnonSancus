@@ -456,85 +456,6 @@ color: rgba(190, 206, 0, 1);}
 
 
 
-/* Unique Carousel Section */
-.unique-carousel-section {
-    display: flex;
-    width: 100%;
-    height: 600px; /* Adjust height as needed */
-    margin-top: 30px; /* Top margin */
-    padding-left: 200px; /* Left padding */
-    padding-right: 0;
-    padding-top: 180px; /* Top padding */
-    position: relative; /* Relative positioning for stacking layers */
-    overflow: hidden; /* Hide overflow */
-    align-items: center; /* Center carousel vertically */
-	background-color:#F9F9F9
-}
-
-/* Unique Text Container */
-.unique-text-container {
-    width: 20%;
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
-
-.unique-text-container h2 {
-    font-size: 2rem;
-    margin: 10px 0; /* Spacing between lines */
-}
-
-/* Unique Carousel Container */
-.unique-carousel-container {
-    width: 80%;
-    position: relative;
-    flex: 8;
-    z-index: 2; /* Set z-index higher than the background image */
-}
-
-/* Background image behind carousel */
-#carousCard_1_image {
-    position: absolute;
-    bottom: 210px; /* Position it higher relative to the carousel */
-    left: -30px;       /* Align it to the left */
-    width: 100%;
-    height: auto;  /* Adjust based on image ratio */
-    z-index: 1;    /* Place it behind the carousel */
-}
-
-/* Unique Carousel */
-.unique-carousel {
-    display: flex;
-    transition: transform 0.5s ease; /* Smooth transition for sliding */
-    transform: translateX(0); /* Start position */
-    position: relative; /* Ensure this stays relative to the wrapper */
-    z-index: 2;   
-    justify-content: center; /* Center the cards horizontally */
-    align-items: center;     /* Center cards vertically */
-    overflow: hidden;        /* Hide overflow */
-    height: 100%;            /* Full height of the container */
-	
-}
-
-/* Unique Cards */
-.unique-card {
-    min-width: 300px;  /* Minimum width of cards */
-    height: 200px;     /* Fixed height for cards */
-    margin: 10px;      /* Spacing between cards */
-    border-radius: 10px;
-    color: white;      /* Text color */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: flex-start; /* Align content to the left */
-    padding-left: 20px; /* Adjust padding if needed */
-    padding-right: 20px;
-padding-top: 50px;
-padding-bottom:50px;
-	/* Right padding for content spacing */
-}
 
 /* Text inside the cards */
 .unique-card p {
@@ -932,4 +853,191 @@ button#unique-submit-btn:hover {
     }
 }
 
+
+
+/* Unique Carousel Section */
+.unique-carousel-section {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+}
+
+/* Unique Text Container */
+.unique-text-container {
+  width: 100%;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 8%;
+}
+
+.unique-text-container p {
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 65px;
+}
+
+/* Unique Carousel Container */
+.unique-carousel-container {
+  width: 60%;
+  position: relative;
+  flex: 8;
+  z-index: 2; /* Set z-index higher than the background image */
+  overflow: hidden;
+}
+
+.quote-image {
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  z-index: 1;
+}
+
+.quote-image > img {
+  width: 60%;
+}
+/* Background image behind carousel */
+
+
+
+/* Unique Carousel */
+.unique-carousel {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  height: 90dvh;
+}
+
+.carousel-main {
+  height: 100%;
+  display: flex;
+  gap: 2dvw;
+  padding-top: 0%;
+  padding-left: 13%;
+  z-index: 2;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Unique Cards */
+.unique-card {
+  width: 28dvw; /* Minimum width of cards */
+  min-height: 35dvh;
+   height: max-content; 
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #464646;
+}
+
+.unique-card.card-active {
+  background-color: #464646; /* Example background color */
+  padding: 4rem;
+}
+
+
+
+
+/*------------------image---------*/
+
+
+@media only screen and (max-width: 1024px) {
+  .dual-section {
+    margin: 0 10px; /* Reduce margins further for smaller screens */
+  }
+  .content-container,
+  .content-container1 {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Reduce padding for smaller screens */
+    align-items: center; /* Ensure items are centered */
+    justify-content: center; /* Ensure content is centered vertically */
+  }
+  .text-container,
+  .text-container1 {
+    padding: 5px 15px; /* Further reduce padding */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Ensure text takes full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensure that "Discover more" is centered */
+    margin-left: 30px;
+  }
+  .text-container_heading {
+    font-size: 3.5em; /* Reduce font size for mobile */
+    margin-bottom: 10px; /* Add margin below heading */
+  }
+  .text-container p,
+  .text-container1 p {
+    font-size: 1.2em; /* Adjust font size for readability */
+    margin-bottom: 15px; /* Ensure space between paragraph and link */
+  }
+  .text-link {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #BDCD31; /* Adjust link color */
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center; /* Center-align the "Discover more" text */
+  }
+  .divider,
+  .divider1 {
+    width: 5px; /* Make divider thinner */
+    height: auto; /* Adjust height to fit content */
+    margin: 0 auto; /* Center the divider */
+    position: relative; /* Ensure the divider doesn't overlap */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+  .image-container {
+    margin-bottom: 20px; /* Add space between image and text */
+    text-align: center; /* Center the image */
+    width: 100%; /* Ensure image container takes full width */
+  }
+  .image-container img {
+    max-width: 80%; /* Reduce image size for mobile */
+    height: auto; /* Keep aspect ratio */
+    margin: 0 auto; /* Center the image within its container */
+  }
+}
+/* Mobile Responsive Design */
+@media only screen and (max-width: 768px) {
+    .text-section-unique{
+   margin-left: 8rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .content-container {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+}
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  body {
+    width: 215vw !important;
+  }
+  .homeImg {
+    width: 100% !important;
+  }
+  .image-section-top {
+    width: 0% !important;
+    height: 0% !important; /* Fixed height */
+  }
+}
+.homeImg {
+  width: 0%;
+}
 
