@@ -35,10 +35,12 @@
     color: #000000;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight:500;
+    font-size: larger;
   }
   
   .nav-item:hover {
-    color: rgb(12, 11, 11);
+    color: #BECE00;
   }
   
   /* Button styling */
@@ -210,6 +212,9 @@ padding-bottom: 40px;
   }
 
 
+/*----------drive your success----------*/
+
+
 
   .containerx{
     padding-top: 6px;
@@ -240,6 +245,7 @@ padding-bottom: 40px;
     justify-content: space-around;
     gap: 24px; /* Equivalent to space-x-6 */
     margin-top: 60px; /* mt-8 */
+    padding: 20px;
   }
 
   /* Individual boxes */
@@ -272,6 +278,7 @@ padding-bottom: 40px;
     border: 1px solid #BDCD31;
     background-color: #BDCD31; /* Background color for .box-lime */
     transition: opacity 0.3s; /* Smooth transition */
+    border-radius: 8px; 
   }
   
   .box-lime:hover {
@@ -281,7 +288,8 @@ padding-bottom: 40px;
   .boxhover {
     height: 20rem;
     display: none;
-    
+    align-items: start;
+    text-align: left;
     position: absolute; /* Position it absolutely within the parent */
     top: 0; /* Align it to the top of the parent box */
     left: 0; /* Align it to the left of the parent box */
@@ -290,6 +298,7 @@ padding-bottom: 40px;
     padding: 20px; /* Padding inside the hover box */
     border: 1px solid #BDCD31; /* Optional: border for the hover box */
     z-index: 1; /* Ensure it is on top of the parent box */
+    border-radius: 8px; 
   }
   .box-h{
 padding-bottom: 10px;
@@ -309,9 +318,10 @@ padding-bottom: 10px;
     height: 20rem;
     position: relative; /* Ensure that the boxhover is positioned relative to the box */
     padding: 20px;
-    border: 1px solid #BDCD31;
-    background-color: #BDCD31; /* Background color for .box-lime */
+    border: 1px solid #1f2937;
+    background-color: #1f2937; /* Background color for .box-lime */
     transition: opacity 0.3s; /* Smooth transition */
+    border-radius: 8px; 
   }
   
   .box-gray:hover {
@@ -322,14 +332,16 @@ padding-bottom: 10px;
     height: 20rem;
     display: none;
     color: #000000;
+    text-align: left;
     position: absolute; /* Position it absolutely within the parent */
     top: 0; /* Align it to the top of the parent box */
     left: 0; /* Align it to the left of the parent box */
     right: 0; /* Stretch it to the right of the parent box */
     background-color: white; /* White background for hover box */
     padding: 20px; /* Padding inside the hover box */
-    border: 1px solid #BDCD31; /* Optional: border for the hover box */
+    border: 1px solid #1f2937; /* Optional: border for the hover box */
     z-index: 1; /* Ensure it is on top of the parent box */
+    border-radius: 8px; 
   }
   .box-h{
 padding-bottom: 10px;
@@ -352,6 +364,8 @@ align-items:start;
 
 
 
+
+  /*--Insights into our fluency workflow --*/
 
 
 
@@ -460,8 +474,8 @@ align-items:start;
 }
 /* Icon styling */
 .icon {
-    height: auto; /* h-12 */
-    width: auto; /* w-12 */
+    height: 7rem; /* h-12 */
+    width: 7rem; /* w-12 */
 }
 
 /* Step number */
@@ -514,10 +528,12 @@ align-items:start;
 }
 
 .contact-button:hover {
-    background-color: #66bb00; /* Hover color for lime */
+    background-color: #BECE00; 
+    
+    color: #ffffff;
 }
 
-
+/*------------------Cards ------------*/
 
 
 /* Container styling */
@@ -534,7 +550,7 @@ align-items:start;
     justify-content: center;/* Center items */
     padding: 1.5rem; /* Equivalent to p-6 */
     background-color: #e5e7eb; /* bg-gray-100 */
-    border-radius: 0.5rem; /* Rounded corners */
+  /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
     transition: background-color 0.3s ease; /* Smooth transition */
     height: 420px;
@@ -558,9 +574,9 @@ align-items:start;
 }
 
 /* Icon styling */
-.icon {
-    height: 4rem; /* h-16 */
-    width: 4rem; /* w-16 */
+.iconx {
+    height: 10rem; /* h-16 */
+    width: 10rem; /* w-16 */
     margin-bottom: 1rem; /* mb-4 */
 }
 
@@ -577,8 +593,13 @@ align-items:start;
 
 
 
+/*----------Start your
+cultural content
+journey! ---------*/
 
+.backdiv{
 
+}
 /* Card Styling */
 .form-card {
    
@@ -603,6 +624,14 @@ align-items:start;
     color: #BECE00; /* Lime-400 */
 }
 
+
+.form{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
 /* Form Grid */
 .grid {
     display: grid;
@@ -768,4 +797,66 @@ button:hover {
 
 @media (max-width: 1023px){
 
+}
+
+
+/* ----Navbar menu -------*/
+nav {
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: #666;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.menu li:hover > .list {
+  color: #ffffff;
+}
+.menux{
+  color: #BECE00;
+}
+
+.dropdown, .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown li, .submenu li {
+  position: relative;
+}
+
+.dropdown li a, .submenu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown li:hover > a, .submenu li:hover > a {
+  background-color: #BECE00;
+}
+
+.menu li:hover > .dropdown, .dropdown li:hover > .submenu {
+  display: block;
 }
