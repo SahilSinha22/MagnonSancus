@@ -1040,4 +1040,14 @@ button#unique-submit-btn:hover {
 .homeImg {
   width: 0%;
 }
+form-section-unique {
+  margin-top: 20px;
+  padding: 3rem;
+}
 
+
+@media only screen and (max-width: 768px) {
+  .text-section-unique {
+      margin-left: 8rem;
+  }
+}
