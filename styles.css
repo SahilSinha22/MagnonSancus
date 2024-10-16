@@ -500,7 +500,7 @@ color: rgba(190, 206, 0, 1);}
 .unique-indicator-wrapper {
     display: flex;
     justify-content: center; /* Center the indicators horizontally */
-    padding-top:30px;	/* Space above indicators */
+    padding-top:0 30px  0 0;	/* Space above indicators */
 	padding-bottom: 50px;
 	background-color:#F9F9F9
 }
@@ -863,7 +863,7 @@ button#unique-submit-btn:hover {
   overflow: hidden;
   align-items: center;
   background-color: #f9f9f9;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 /* Unique Text Container */
@@ -1027,7 +1027,7 @@ button#unique-submit-btn:hover {
 /* Responsive Styling */
 @media screen and (max-width: 768px) {
   body {
-    width: 215vw !important;
+    width: 100vw !important;
   }
   .homeImg {
     width: 100% !important;
