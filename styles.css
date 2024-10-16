@@ -1046,9 +1046,10 @@ form-section-unique {
 }
 
 
-@media only screen and (max-width: 768px) {
-  .text-section-unique {
-      margin-left: 8rem;
+@media (max-width: 768px) {
+  .form-section-unique {
+      margin-top: 20px;
+      padding: 3rem;
   }
 }
 @media only screen and (max-width: 768px) {
